@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imam Malik Academy Nigeria</title>
-    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
-    
+    <!-- <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
 
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-left: 10px;">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-left: 10px;">
         <img id="logo" src="static/sch logo.png" height="60px" width="60px">
         <p class="" style="font-size: 30px;"> Imam Malik Academy Nigeria</p>
   
@@ -30,22 +31,50 @@
         </div>
 
         
-    </nav>
+    </nav> -->
 
-    <section>
-        <div style="background-color: rgb(55, 0, 255); border-radius: 10px; height: 300px; text-align: center; padding: 10px 15px;">
-            <p style=" border-radius: 10px; text-align: center; font-size: 50px; margin-top: 2px; color: white; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
-                Welcome to Imam Malik Academy Nigeria
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Imam Malik</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-            </p>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
 
-            <p style="font-size: 20px; color: white; text-align: center; margin-top: 30px;">Nurturing Minds, Building Futures, One Student at a Time</p>
-            <p style=" justify-self: center; font-size: 20px; padding-top: 10px; ">
-                <button class="btn btn-danger">Enrol Now</button>
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to IMAN.</h1>
+            <p class="lead">Nurturing Minds, Building Futures, One Student at a Time</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Enroll Now!</a>
             </p>
         </div>
-
-    </section>
 
     <section style="border: 50px; margin: 20px 50px;">
         <div style="margin-top: 50px; font-size: 20px;">
@@ -64,42 +93,46 @@
         </div>
     </section>
 
-    <section style="background-color: wheat; padding: 30px; text-align: center;">
+    <section class="py-5" style="background-color: wheat; text-align: center;">
+        <div class="container">
+            <div class="mb-5">
+            <h4 class="display-4">Our Programs</h4>
+            </div>
 
-        <div style="margin: 30px 50px;"><h4 style="font-size: 35px;">Our Programs</h4></div>
-        <div style="display: inline-flex;">
-            <div style="padding: 30px;">
-                <div style="background-color: beige; border: 100px; display: block; width: 300px; height: 300px; border-radius: 20px;">
-                    <img src="static/book.jpeg" height="40%" width="40%" style="padding: 15px;" >
-
-                    <h4> <b>Primary School</b></h4>
-                    <p>
-                    Foundation years focused on building core skills in reading, writing, and mathematics.
-                    </p>
+            <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100" style="border-radius: 20px; background-color: beige;">
+                <img src="static/book.jpeg" class="card-img-top mx-auto mt-3" alt="Primary School" style="width: 40%; height: auto;">
+                <div class="card-body">
+                    <h4 class="card-title font-weight-bold">Primary School</h4>
+                    <p class="card-text">Foundation years focused on building core skills in reading, writing, and mathematics.</p>
+                </div>
                 </div>
             </div>
-        
-            
-            <div style="padding: 30px;">
-            <div style="background-color: beige; border: 60px; width: 300px; height: 300px; border-radius: 20px; padding: 50px;">
-            <img src="static/mic.jpg" height="80px" width="80px">
-            <h4><b>Secondary School</b></h4>
 
-            <p>Advanced curriculum preparing students for higher education and future careers.</p>
-
+            <div class="col-md-4 mb-4">
+                <div class="card h-100" style="border-radius: 20px; background-color: beige;">
+                <img src="static/mic.jpg" class="card-img-top mx-auto mt-3" alt="Secondary School" style="width: 80px; height: 80px;">
+                <div class="card-body">
+                    <h4 class="card-title font-weight-bold">Secondary School</h4>
+                    <p class="card-text">Advanced curriculum preparing students for higher education and future careers.</p>
+                </div>
+                </div>
             </div>
-            </div>
 
-            <div style="padding: 30px;">
-            <div style="background-color: beige; border: 100px; display: block; width: 300px; height: 300px; border-radius: 20px;">
-            <img src="static/color.webp" height="30%" width="30%" style="margin: 15px;">
-
-            <h4>Extra Activities</h4>
-            <p>Sports, arts, music, and clubs to develop well-rounded individuals.</p>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100" style="border-radius: 20px; background-color: beige;">
+                <img src="static/color.webp" class="card-img-top mx-auto mt-3" alt="Extra Activities" style="width: 30%; height: auto;">
+                <div class="card-body">
+                    <h4 class="card-title font-weight-bold">Extra Activities</h4>
+                    <p class="card-text">Sports, arts, music, and clubs to develop well-rounded individuals.</p>
+                </div>
+                </div>
             </div>
             </div>
         </div>
-    </section>
+        </section>
+
 
 
     <section style="margin: 80px; text-align: center;" >
@@ -133,6 +166,9 @@
     </section>
     
 
-    <script src="bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+    <!-- <script src="bootstrap-5.3.8-dist/js/bootstrap.min.js"></script> -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
